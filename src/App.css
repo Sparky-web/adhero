@@ -1,0 +1,18 @@
+.onboard__panel {
+    display: grid;
+    align-content: center;
+    height: 97vh !important;
+    overflow: hidden;
+}
+.onboard__image {
+    width: 100%;
+    max-width: 400px;
+}
+
+@media (max-height: 500px) {
+    .onboard__panel {
+        height: 100% !important;
+        overflow: auto;
+    }
+    
+}
