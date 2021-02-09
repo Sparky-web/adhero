@@ -95,6 +95,7 @@ body {
 .filters__dash > .FormField {
     position: relative;
 }
+
 .filters__dash > .FormField:before {
     content: "";
     width: 12px;
@@ -109,4 +110,18 @@ body {
 
 .modal .ModalPageHeader__content-in {
     justify-content: center;
+}
+
+.filters__currency {
+    position: relative;
+}
+
+.filters__currency:after {
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    content: "₽";
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
 }

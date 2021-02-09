@@ -66,8 +66,9 @@ function Filters(props: ModalProps) {
             </FormLayoutGroup>
 
             <FormLayoutGroup mode={"horizontal"} className={"filters__two-cols"}>
-                <Field className={""} label="Цена" formik={formik} name={"priceMin"} type={"number"}/>
-                <Field className={"filters__dash"} label="‏‏‎ ‎" formik={formik} name={"priceMax"} type={"number"}/>
+                <Field className={"filters__currency"} label="Цена" formik={formik} name={"priceMin"} type={"number"}/>
+                <Field className={"filters__dash filters__currency"} label="‏‏‎ ‎" formik={formik} name={"priceMax"}
+                       type={"number"}/>
             </FormLayoutGroup>
             <Div><Button
                 disabled={!formik.isValid || formik.isSubmitting}
