@@ -1,9 +1,14 @@
+body {
+    margin: 0;
+}
+
 .onboard__panel {
     display: grid;
     align-content: center;
     height: 97vh !important;
     overflow: hidden;
 }
+
 .onboard__image {
     width: 100%;
     max-width: 400px;
@@ -14,5 +19,94 @@
         height: 100% !important;
         overflow: auto;
     }
-    
+}
+
+.PanelHeader__content span {
+    font-weight: 700 !important;
+    font-size: 20px !important;
+}
+
+/*.PanelHeader--android::before {*/
+/*    height: 38px !important;*/
+/*    padding-top: 9px !important;*/
+/*}*/
+
+.ad-groups .RichCell__children {
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.ml-2 {
+    margin-left: 0.5rem !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.ad-groups__loading {
+    position: relative;
+    overflow: hidden;
+}
+
+.ad-groups__loading:after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 2;
+    content: "";
+}
+
+@keyframes loading_animation {
+    from {
+        right: 100%
+    }
+    to {
+        right: -25%
+    }
+}
+
+.ad-groups__loading:before {
+    width: 40%;
+    height: 100%;
+    transform: skewX(15deg);
+    position: absolute;
+    top: 0;
+    content: "";
+    background: rgba(255, 255, 255, 0.4);
+    z-index: 3;
+    filter: blur(30px);
+    animation-name: loading_animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.Root__modal {
+    font-family: var(--font-tt);
+}
+
+.filters__dash > .FormField {
+    position: relative;
+}
+.filters__dash > .FormField:before {
+    content: "";
+    width: 12px;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    top: 50%;
+    transform: translate(-150%, -50%);
+}
+
+.modal .ModalPageHeader__content-in {
+    justify-content: center;
 }

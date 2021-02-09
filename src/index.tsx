@@ -4,8 +4,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "@vkontakte/vkui/dist/vkui.css"
 import {NavigationProvider} from "./context/NavigationContext";
+import {Provider} from "react-redux";
+import store from "./redux"
 
-ReactDOM.render(<NavigationProvider><App/></NavigationProvider>,
+ReactDOM.render(
+    <Provider store={store}>
+        <NavigationProvider><App/></NavigationProvider>
+    </Provider>
+    ,
     document.getElementById('root')
 );
 

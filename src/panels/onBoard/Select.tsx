@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {Div, Title, Text, CellButton, Group} from "@vkontakte/vkui/dist";
+import {CellButton, Div, Group, Text, Title} from "@vkontakte/vkui/dist";
 import {MainPanel} from "../../types/app";
 import {NavigationContext} from "../../context/NavigationContext";
 

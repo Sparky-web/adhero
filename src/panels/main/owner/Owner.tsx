@@ -3,10 +3,10 @@ import {Title} from "@vkontakte/vkui/dist";
 
 function Owner() {
     return (
-        <div>
+        <React.Fragment>
             <Title level={"1"} weight={"bold"}>Кабинет владельца группы</Title>
-        </div>
+        </React.Fragment>
     );
 }
 
-export default Owner;
+export default Owner

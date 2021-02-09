@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import image from "./connection.png"
-import {Div, Title, Text, Button} from "@vkontakte/vkui/dist";
+import {Button, Div, Text, Title} from "@vkontakte/vkui/dist";
 import {NavigationContext} from "../../context/NavigationContext";
 
 function Info() {
